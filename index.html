@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>AskNAU!</title>
 	<link rel="stylesheet" type="text/css" href="assets/stylesheet/main.css">
 	<script src="assets/javascript/main.js"></script>
 </head>
-<body>
+<body onload="tabsOnClick('newest')">
 
 <!-- ________________________Header________________________ -->
 
@@ -21,116 +21,122 @@
 
 		</div>
 	</div>
+
 	<div id="overlay"></div>
-		<header>
-			<div id=header>
-				<div id="asknau"><img src="assets/img/asknau.png" width="80px""></div>
-				<div id="nau"><img src="http://www.na.edu/images/logo/Logo3-alone.png" width="60px"></div>
-				<div id="search"><input type="text" name="search" placeholder="Search..."></div>
-				<div id="bio">
-					Welcome, Daniyar Kayirbolatov
-					<button id="signout" onclick="signout()">Log Out</button>
-				</div>
-				<div id=account><button id="account" onclick="login()">Sign In</button></div>
+
+	<header>
+		<div id=header>
+			<div id="asknau"><img src="assets/img/asknau.png" width="80px""></div>
+			<div id="nau"><img src="http://www.na.edu/images/logo/Logo3-alone.png" width="60px"></div>
+			<div id="search"><input type="text" name="search" placeholder="Search..."></div>
+			<div id="bio">
+				Welcome, Daniyar Kayirbolatov
+				<button id="signout" onclick="signout()">Log Out</button>
 			</div>
-		</header>
+			<div id=account><button id="account" onclick="login()">Sign In</button></div>
+		</div>
+	</header>
 <!-- __________________________Body____________________________-->
-		<div class = "content">
-			<div class="question-content">
-				<div class="questions">
-					<div id = "subheader">
-						<h3 id="topquestion"><span>All Questions</span></h3>
-						<div id="tabs">
-							<a href="#" name="tabs" onmouseover='tabsonmouseover("newest")' onmouseout='this.style.backgroundColor="white";' onclick='tabsOnClick("newest")'><span>newest</span></a>
-							<a href="#" name="tabs" onmouseover='tabsonmouseover("featured")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('featured') "><span>featured</span></a>
-							<a href="#" name="tabs" onmouseover='tabsonmouseover("frequent")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('frequent')"><span>frequent</span></a>
-							<a href="#" name="tabs" onmouseover='tabsonmouseover("votes")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('votes')"><span>votes</span></a>
-							<a href="#" name="tabs" onmouseover='tabsonmouseover("active")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('active')"><span>active</span></a>
-						</div>
-					</div>
-				
-					<div class="question-summary">
-						<div class="stats-container">
-							<div class="votes">
-								<span><strong>0</strong></span></br>
-								<div class="viewcount">votes</div>
-							</div>
-						<div class="answers">
-							<span><strong>0</strong></span></br>
-							<div class="viewanswer">answers</div>
-						</div>
-						<div class="views"><span>116</span> views</div>
-					</div>
-					<div class="summary"> 
-						<h3>Angular - How to create a persistent/permanent “Add to Home screen” button in my web app, just like Google Contribute</h3>
-						<div class="excerpt">
-							How to create a persistent/permanent "Add to Home screen" button in my web app, just like Google Contribute? (see image below) Background: It's an Angular v5 app with PWA service worker and manifest....
-						</div>
+	<div class = "content">
+		<div class="question-content">
+			<div class="questions">
+				<div id = "subheader">
+					<h3 id="topquestion"><span>All Questions</span></h3>
+					<div id="tabs">
+						<a href="#" name="tabs" onmouseover='tabsonmouseover("newest")' onmouseout='this.style.backgroundColor="white";' onclick='tabsOnClick("newest")'><span>newest</span></a>
+						<a href="#" name="tabs" onmouseover='tabsonmouseover("featured")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('featured') "><span>featured</span></a>
+						<a href="#" name="tabs" onmouseover='tabsonmouseover("frequent")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('frequent')"><span>frequent</span></a>
+						<a href="#" name="tabs" onmouseover='tabsonmouseover("votes")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('votes')"><span>votes</span></a>
+						<a href="#" name="tabs" onmouseover='tabsonmouseover("active")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('active')"><span>active</span></a>
 					</div>
 				</div>
-				<hr>	
+				
 				<div class="question-summary">
 					<div class="stats-container">
 						<div class="votes">
 							<span><strong>0</strong></span></br>
 							<div class="viewcount">votes</div>
 						</div>
-						<div class="answers">
-							<span><strong>0</strong></span></br>
-							<div class="viewanswer">answers</div>
-						</div>
-						<div class="views"><span>200</span> views</div>
+					<div class="answers">
+						<span><strong>0</strong></span></br>
+						<div class="viewanswer">answers</div>
 					</div>
-					<div class="summary">
-						<h3>Angular - How to create a persistent/permanent “Add to Home screen” button in my web app, just like Google Contribute</h3>
-						<div class="excerpt">
-							How to create a persistent/permanent "Add to Home screen" button in my web app, just like Google Contribute? (see image below) Background: It's an Angular v5 app with PWA service worker and manifest....
-						</div>
+					<div class="views"><span>116</span> views</div>
+				</div>
+		
+				<div class="summary"> 
+					<h3>Angular - How to create a persistent/permanent “Add to Home screen” button in my web app, just like Google Contribute</h3>
+					<div class="excerpt">
+						How to create a persistent/permanent "Add to Home screen" button in my web app, just like Google Contribute? (see image below) Background: It's an Angular v5 app with PWA service worker and manifest....
 					</div>
 				</div>
-				<hr>
 			</div>
+			<hr>	
+			<div class="question-summary">
+				<div class="stats-container">
+					<div class="votes">
+						<span><strong>0</strong></span></br>
+						<div class="viewcount">votes</div>
+					</div>
+					<div class="answers">
+						<span><strong>0</strong></span></br>
+						<div class="viewanswer">answers</div>
+					</div>
+					<div class="views"><span>200</span> views</div>
+				</div>
+				<div class="summary">
+					<h3>Angular - How to create a persistent/permanent “Add to Home screen” button in my web app, just like Google Contribute</h3>
+					<div class="excerpt">
+						How to create a persistent/permanent "Add to Home screen" button in my web app, just like Google Contribute? (see image below) Background: It's an Angular v5 app with PWA service worker and manifest....
+					</div>
+				</div>
+			</div>
+			<hr>
 		</div>
+	</div>
 
 <!-- ______________________NEWS_________________________ -->
 
-		<div class="news">
-			<div class="newstitle" style="margin-left: 20px;"><a href="http://www.na.edu/category/headlines/" style="text-decoration: none;"><h2 style="color: #005d88;">News</h2></a></div>
-			<div class="n1">
-				<div class="news1">
-					<a href="http://www.na.edu/spring-semester-early-registration/">
-						<img class="img1" src="assets/img/news1.jpg" width="300px">
-					</a>
-				</div>
-				<a href="http://www.na.edu/spring-semester-early-registration/">
-					<h4>Spring Semester Early Registration</h4>
-				</a>
-				<p>The Spring semester early registration opens Monday November</p>
-			</div>
-			<div class="n2">
-				<div class="news2">
-					<a href="http://www.na.edu/m-ed-program-ranks-12th-nationwide/">
-						<img class="img2" src="assets/img/news2.jpg" width="300px">
-					</a>
-				</div>
-				<a href="http://www.na.edu/m-ed-program-ranks-12th-nationwide/">
-					<h4>NAU’s M.Ed. program ranks 12th in U.S.</h4>
-				</a>
-				<p>North American University’s Online M.Ed. in Educational Leadership</p>
-			</div>
-			<div class="n3">
-				<div class="news3">
-					<a href="http://www.na.edu/acm-student-club-hosts-hacknau-hackathon/">
-						<img class="img3" src="assets/img/news3.jpg" width="300px">
-					</a>
-				</div>
-				<a href="http://www.na.edu/acm-student-club-hosts-hacknau-hackathon/">
-					<h4>ACM hosts hackNAU Hackathon</h4>
-				</a>
-				<p>North American University ACM Student Club announce city</p>
-			</div>
+	<div class="news">
+		<div class="newstitle" style="text-align: center;">
+			<a href="http://www.na.edu/category/headlines/">
+				<h2 style="color: #005d88;">News</h2>
+			</a>
 		</div>
-
+		<div class="n1">
+			<div class="news1">
+				<a href="http://www.na.edu/spring-semester-early-registration/">
+					<img class="img1" src="assets/img/news1.jpg" width="300px">
+				</a>
+			</div>
+			<a href="http://www.na.edu/spring-semester-early-registration/">
+				<h4>Spring Semester Early Registration</h4>
+			</a>
+			<p>The Spring semester early registration opens Monday November</p>
+		</div>
+		<div class="n2">
+			<div class="news2">
+				<a href="http://www.na.edu/m-ed-program-ranks-12th-nationwide/">
+					<img class="img2" src="assets/img/news2.jpg" width="300px">
+				</a>
+			</div>
+			<a href="http://www.na.edu/m-ed-program-ranks-12th-nationwide/">
+				<h4>NAU’s M.Ed. program ranks 12th in U.S.</h4>
+			</a>
+			<p>North American University’s Online M.Ed. in Educational Leadership</p>
+		</div>
+		<div class="n3">
+			<div class="news3">
+				<a href="http://www.na.edu/acm-student-club-hosts-hacknau-hackathon/">
+					<img class="img3" src="assets/img/news3.jpg" width="300px">
+				</a>
+			</div>
+			<a href="http://www.na.edu/acm-student-club-hosts-hacknau-hackathon/">
+				<h4>ACM hosts hackNAU Hackathon</h4>
+			</a>
+			<p>North American University ACM Student Club announce city</p>
+		</div>
 	</div>
+
 </body>
 </html>
