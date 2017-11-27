@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>AskNAU!</title>
-	<link rel="stylesheet" type="text/css" href="assets/stylesheet/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheet/question.css">
 	<script src="assets/javascript/main.js"></script>
 </head>
 <body onload="tabsOnClick('newest')">
@@ -40,75 +40,28 @@
 	<div class = "content">
 		<div class="question-content">
 			<div class="questions">
-				<div id = "subheader">
-					<h3 id="topquestion"><span>All Questions</span></h3>
-					<div id="tabs">
-						<a href="#" name="tabs" onmouseover='tabsonmouseover("newest")' onmouseout='this.style.backgroundColor="white";' onclick='tabsOnClick("newest")'><span>newest</span></a>
-						<a href="#" name="tabs" onmouseover='tabsonmouseover("featured")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('featured') "><span>featured</span></a>
-						<a href="#" name="tabs" onmouseover='tabsonmouseover("frequent")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('frequent')"><span>frequent</span></a>
-						<a href="#" name="tabs" onmouseover='tabsonmouseover("votes")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('votes')"><span>votes</span></a>
-						<a href="#" name="tabs" onmouseover='tabsonmouseover("active")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('active')"><span>active</span></a>
-					</div>
-				</div>
 				
-				<div class="question-summary">
-					<div class="stats-container">
-						<div class="votes">
-							<span><strong>2</strong></span></br>
-							<div class="viewcount">votes</div>
-						</div>
-
-						<div class="answers">
-							<span><strong>2</strong></span></br>
-							<div class="viewanswer">answers</div>
-						</div>
-						<div class="views"><span>116</span> views</div>
-					</div>
-        
-					<div class="summary"> 
-						<a href="question.html"><h3>Web Application COMP3326</h3></a>
-						<div class="excerpt">
-							Hello guys, I hope you do well. Who can tell me when final project due? I thought....
-						</div>
-						<div class="tag">
-							<a href="#">COMP3326</a>
-							<a href="#">Web Application</a>	
-							<a href="#">IhsanSaid</a>						
-						</div>
-					</div>
-				</div>
-				<hr>	
-        
-				<div class="question-summary">
-					<div class="stats-container">
-						<div class="votes">
-							<span><strong>5</strong></span></br>
-							<div class="viewcount">votes</div>
-						</div>
-
-						<div class="answers">
-							<span><strong>3</strong></span></br>
-							<div class="viewanswer">answers</div>
-						</div>
-						<div class="views"><span>200</span> views</div>
-					</div>
-
-					<div class="summary">
-						<h3>Thanks giving</h3>
-						<div class="excerpt">
-							Hello everyone. I heard that our university is going to celebrate thankgiving day. So is it free?
-						</div>
-						<div class="tag">
-							<a href="#">Thanks giving</a>
-							<a href="#">Free food</a>							
- 						</div>
-					</div>
-				</div>
+				<div class="title">Thanksgiving is free or not?</div>
 				<hr>
+				<div class="votes">
+					<div class="static">
+						<div id="votes">
+							<div><button class="uparrow" onclick="increase()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Pfeil_oben.svg/647px-Pfeil_oben.svg.png"></button></div>
+							<div><button class="downarrow" onclick="decrease()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Aiga_downarrow.svg/750px-Aiga_downarrow.svg.png"></button></div>
+						</div>
+
+						<div class="votesnumber" id="votesnumber">0</div>
+					</div>
+
+					<div class="description">
+						<span>Thanksgiving the best party ever, I liked it.</span>
+					</div>
+				</div>
 			</div>
 		</div>
-        
-    <!-- ____________________NEWS______________________________ -->
+
+	
+		<!-- ____________________NEWS______________________________ -->
 		<div class="news">
 			<div class="newstitle" style="text-align: center;">
 				<a href="http://www.na.edu/category/headlines/">
@@ -151,7 +104,7 @@
 		</div>
 	</div>
 
-  <!-- _____________________FOOTER_______________________________-->
+<!-- _____________________FOOTER_______________________________-->
 
 	<footer>
 		<div id="asknau"><img src="assets/img/asknau.png" width="80px""></div>
