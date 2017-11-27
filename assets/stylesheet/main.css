@@ -2,6 +2,16 @@ body {
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+	color: #005d88;
+}
+
+h4:hover {
+	color: darkblue;
+	font-weight: none;
+}
+
 /*-------------------Header----------------*/
 
 header {
@@ -17,6 +27,7 @@ header {
 	background-size: cover; 
     padding: 0px 0px 0px 10%;
     vertical-align: middle;
+    z-index: 99999999;
 }
 
 #header {
@@ -172,13 +183,16 @@ div.questions {
 /*--------------News--------------------*/
 
 .news {
-	width: 3 0%;
+	width: 30%;
 }
 
 .news .n1, .n2, .n3 {
-	padding: 20px;
+	padding: 20px 20px 0px 20px;
 }
 
+.news h4, p {
+	margin: 5px 0px 0px 0px;
+}
 .news1 {
 	width: 100%;
 	overflow: hidden;
@@ -189,7 +203,7 @@ div.questions {
 }
 
 .news1:hover img {
-	transform:scale(1.1);
+	transform: scale(1.1);
 }
 
 .news2 {
