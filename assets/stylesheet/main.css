@@ -131,7 +131,9 @@ button[id="account"] {
  	align-self: flex-end;
  	padding-bottom: 10px;
  }
-
+.questions hr {
+	width: 100%;
+}
 div.questions {
 	background-color: white;
 	flex: 1;
@@ -144,8 +146,20 @@ div.questions {
 	margin-top: 30px;
 }
 
+.tag a {
+	border: 1px solid grey;
+	background-color: rgba(0,41,58,0.2);
+	font-size: 11px;
+	padding: 4px;
+	margin-right: 5px;
+}
+
+.tag {
+	margin-top: 15px;
+}
+
 .question-summary {
-	float: left;
+	/*float: left;*/
 	display: inline-block;	
 	margin-bottom: 50px;
 }
@@ -160,6 +174,7 @@ div.questions {
 	float: left;
 	width: 82%;
 	flex:1;
+
 }
 
 .summary h3 {
@@ -179,6 +194,11 @@ div.questions {
 .viewcount, .viewanswer {
 	font-size: 15px;
 }
+
+.excerpt {
+  font-size: 15px;
+  width: 100%;
+ }	
 
 /*--------------News--------------------*/
 
