@@ -97,24 +97,42 @@ div.questions {
 	color: darkblue;
 	font-weight: bold;
 	font-size: 23px;
+	width: 685px;
 }
 
-.votes #votes, .votesnumber {
+
+
+.static #votes, .votesnumber {
 	display: inline-block;
 	vertical-align: middle;
 }
 
-.votes .static, .description {
+.static #votes, .commentnumber {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.votes {
+	width: 100%;
 	display: inline-block;
 }
 
-.description {
-	display: inline-block;
+.votes .static {
+	width: 10%;
+	float: left;
+}
+.votes .description {
+	width: 90%;
+	float: left;	
+}
+
+div.description {
 	font-size: 15px;
 	color: black;
 	font-weight: normal;
 	vertical-align: top;
-	margin-left: 20px;
+	width: 100%;
+	word-wrap: break-word;
 }
 
 .votesnumber {
@@ -130,6 +148,18 @@ div.questions {
 .votes img {
 	background-repeat: no-repeat;
 	width: 20px;
+}
+
+.tag a {
+	border: 1px solid grey;
+	background-color: rgba(0,41,58,0.2);
+	font-size: 11px;
+	padding: 4px;
+	margin-right: 5px;
+}
+
+.tag {
+	margin-top: 15px;
 }
 
 /*--------------News--------------------*/
@@ -226,7 +256,6 @@ div.questions {
 }
 #bio {
 	position: fixed;
-	visibility: hidden;
 	left: 930px;
 	top: 23px;
 	font-family: sans-serif;
@@ -241,6 +270,7 @@ div.buttons button {
 	color: white;
 	width: 90px;
 	font-size: 20px;
+	visibility: hidden;
 	height: 40px;
 }
 button#signout {
@@ -253,7 +283,6 @@ button#signout {
 	color: white;
 	width: 70px;
 	height: 40px;
-	visibility: hidden;
 }
 
 #overlay {
@@ -286,4 +315,10 @@ footer div {
 	color: white;
 	font-family: Monospace;
 	margin-left: 250px;
+}
+
+/*--------------------Comments------------------------ */
+.commentnumber {
+	font-size: 30px;
+	color: black;
 }

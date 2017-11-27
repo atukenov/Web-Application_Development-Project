@@ -125,7 +125,7 @@ function tabsonmouseover(x) {
 
 //---------------------Votes-----------------------
 
-var votes = 0;
+var votes = 2;
 
 function increase() {
 	votes++;
@@ -135,4 +135,17 @@ function increase() {
 function decrease() {
 	votes--;
 	document.getElementById("votesnumber").innerHTML = votes;
+}
+
+//-------------comment-----------------------
+var com = 2;
+
+function increasecom() {
+	com++;
+	document.getElementById("commentnumber").innerHTML = com;
+}
+
+function decreasecom() {
+	com--;
+	document.getElementById("commentnumber").innerHTML = com;
 }

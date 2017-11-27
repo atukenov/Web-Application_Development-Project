@@ -26,8 +26,8 @@
 
 	<header>
 		<div id=header>
-			<div id="asknau"><img src="assets/img/asknau.png" width="80px""></div>
-			<div id="nau"><img src="http://www.na.edu/images/logo/Logo3-alone.png" width="60px"></div>
+			<div id="asknau"><a href="index.html"><img src="assets/img/asknau.png" width="80px""></a></div>
+			<div id="nau"><a href="index.html"><img src="http://www.na.edu/images/logo/Logo3-alone.png" width="60px"></a></div>
 			<div id="search"><input type="text" name="search" placeholder="Search..."></div>
 			<div id="bio">
 				Welcome, Daniyar Kayirbolatov
@@ -41,7 +41,7 @@
 		<div class="question-content">
 			<div class="questions">
 				
-				<div class="title">Thanksgiving is free or not?</div>
+				<div class="title">Web Application COMP3326</div>
 				<hr>
 				<div class="votes">
 					<div class="static">
@@ -50,12 +50,50 @@
 							<div><button class="downarrow" onclick="decrease()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Aiga_downarrow.svg/750px-Aiga_downarrow.svg.png"></button></div>
 						</div>
 
-						<div class="votesnumber" id="votesnumber">0</div>
+						<div class="votesnumber" id="votesnumber">2</div>
 					</div>
 
 					<div class="description">
-						<span>Thanksgiving the best party ever, I liked it.</span>
+						Hello guys, I hope you do well. Who can tell me when final project due? I thought it is 29 November, but I checked the Moodle and figure out that it is on 27th November, I even did not started my project
 					</div>
+					<div class="tag">
+						<a href="#">COMP3326</a>
+						<a href="#">Web Application</a>	
+						<a href="#">IhsanSaid</a>						
+					</div>
+				</div>
+				<hr style="margin-top: 30px;">
+
+				<div class="comment">
+
+					<div class="commenttitle">
+						Comments
+					</div>
+
+					<div class="daniyarcomment" style="margin-top: 20px; border: 1px solid grey; padding: 10px;">
+						<div class="votes">
+							<div class="static">
+								<div id="votes">
+									<div><button class="uparrow" onclick="increasecom()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Pfeil_oben.svg/647px-Pfeil_oben.svg.png"></button></div>
+									<div><button class="downarrow" onclick="decreasecom()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Aiga_downarrow.svg/750px-Aiga_downarrow.svg.png"></button></div>
+								</div>
+								<div class="commentnumber" id="commentnumber">2</div>
+							</div>
+							<div class="description">
+								It is due 27th November, Good Luck!
+							</div>
+							<div class="tag">
+								<a href="#">COMP3326</a>
+								<a href="#">Web Application</a>	
+								<a href="#">IhsanSaid</a>						
+							</div>
+						</div>
+					</div>
+
+					<div class="textarea" style="margin-top: 20px;">
+            			<textarea id="commenttext" name="post-text" cols="80" rows="6" placeholder="Comment Here..."></textarea>
+        			</div>
+
 				</div>
 			</div>
 		</div>
