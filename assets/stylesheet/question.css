@@ -322,3 +322,8 @@ footer div {
 	font-size: 30px;
 	color: black;
 }
+
+.daniyarcomment {
+	position: absolute;
+	visibility: hidden;
+}

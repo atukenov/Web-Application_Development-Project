@@ -149,3 +149,10 @@ function decreasecom() {
 	com--;
 	document.getElementById("commentnumber").innerHTML = com;
 }
+
+function comment() {
+	document.getElementById("daniyarcomment").style.position = "static";
+	document.getElementById("daniyarcomment").style.visibility = "visible";
+	document.getElementById("commenttext").value = "";
+	document.getElementById("name").value = "";
+}

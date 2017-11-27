@@ -70,8 +70,9 @@
 						Comments
 					</div>
 
-					<div class="daniyarcomment" style="margin-top: 20px; border: 1px solid grey; padding: 10px;">
-						<div class="votes">
+					<div class="daniyarcomment" id="daniyarcomment" style="margin-top: 20px; border: 1px solid grey; padding: 10px;">
+						<span style="font-size: 18px;">Daniyar Kayirbolatov</span>
+						<div class="votes" style="margin-top: 10px;">
 							<div class="static">
 								<div id="votes">
 									<div><button class="uparrow" onclick="increasecom()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Pfeil_oben.svg/647px-Pfeil_oben.svg.png"></button></div>
@@ -90,8 +91,16 @@
 						</div>
 					</div>
 
+					<div class="username">
+						<input type="text" id="name" placeholder="Your name..." value="">
+					</div>
+
 					<div class="textarea" style="margin-top: 20px;">
-            			<textarea id="commenttext" name="post-text" cols="80" rows="6" placeholder="Comment Here..."></textarea>
+            			<textarea id="commenttext" name="textarea" cols="80" rows="6" placeholder="Comment Here..."></textarea>
+        			</div>
+
+        			<div>
+        				<button onclick="comment()">Submit</button>
         			</div>
 
 				</div>
