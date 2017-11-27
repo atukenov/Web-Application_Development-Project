@@ -86,123 +86,50 @@ button[id="account"] {
 	margin-top: 63px;
  }
 
- #subheader {
- 	display: inline-block;
- 	width: 100%;
- 	height: 50px;
- 	border-bottom: 1px solid black;
- 	clear: both;
- }
-
- #tabs {
- 	float: right;
- 	height: 100%;
- 	margin: 0 auto;
- 	display: inline-flex;
- }
-
- #tabs a {
- 	text-decoration: none;
- 	color: inherit;
- 	margin-right: 5px;
- 	border-top: 4px solid;
- 	border-color: rgba(20,20,20,0);
- 	align-self: flex-end;
- 	display: flex;
- 	height: 80%;
- 	width: 80px
- }
-
-#tabs a span {
- 	align-self: flex-end;
- 	padding-bottom: 10px;
- 	text-align: center;
- 	width: 100%;
- }
-
- #topquestion {
- 	float: left;
- 	height: 100%;
- 	text-align: left;
- 	margin: 0 auto;
- 	display: flex;
- }
-
- #topquestion span {
- 	align-self: flex-end;
- 	padding-bottom: 10px;
- }
-.questions hr {
-	width: 100%;
-}
-div.questions {
-	background-color: white;
-	flex: 1;
-	padding-top: 5px;
+.question-content {
 	width: 70%;
-	padding-left: 5%;
-	padding-right: 5%;	
-	margin: auto;
-	margin-top: 30px;
 }
 
-.questions hr {
-	width: 100%;
-}
-
-.tag a {
-	border: 1px solid grey;
-	background-color: rgba(0,41,58,0.2);
-	font-size: 11px;
-	padding: 4px;
-	margin-right: 5px;
-}
-
-.tag {
-	margin-top: 15px;
-}
-
-.question-summary {
-	display: inline-block;	
-	margin-bottom: 50px;
-}
-
-.stats-container {
-	width: 10%;
-	margin-left: 15px;
-	margin-right: 10px;
-	text-align: center;
-	float: left;
-}
-
-.summary {
-	float: left;
-	width: 82%;
-	flex:1;
-
-}
-
-.summary h3 {
-	margin: 0;
+div.questions {
+	background: white;
+	margin: 30px 80px 0px 80px;
+	padding: 10px 20px 10px 20px;
 	color: darkblue;
+	font-weight: bold;
+	font-size: 23px;
 }
 
-.votes, .answers {
-	margin-bottom: 5px;
-	color: grey;
+.votes #votes, .votesnumber {
+	display: inline-block;
+	vertical-align: middle;
 }
 
-.votes span, .answers span {
-	font-size: 28px;
+.votes .static, .description {
+	display: inline-block;
 }
 
-.viewcount, .viewanswer {
+.description {
+	display: inline-block;
 	font-size: 15px;
+	color: black;
+	font-weight: normal;
+	vertical-align: top;
+	margin-left: 20px;
 }
 
-.excerpt {
-	font-size: 15px;
-	width: 100%;
+.votesnumber {
+	font-size: 30px;
+	color: black;
+}
+
+.votes button {
+	background-color: transparent;
+	border-style: none;
+}
+
+.votes img {
+	background-repeat: no-repeat;
+	width: 20px;
 }
 
 /*--------------News--------------------*/
@@ -344,7 +271,7 @@ button#signout {
 
 footer {
 	clear: both;
-	position: relative;a
+	position: relative;
 	background: #242729;
 	height: 50px;	
 	padding: 5px 5px 5px 10%;	
