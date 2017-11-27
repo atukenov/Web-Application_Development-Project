@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/stylesheet/main.css">
+	<script src="assets/javascript/main.js"></script>
+</head>
+<body>
+
+<!-- ________________________Header________________________ -->
+
+	<div id="login">
+		
+		<div id="nau" style="text-align: center; margin-top: 50px; margin-left: 30px;"><img src="http://www.na.edu/images/logo/Logo3-alone.png" width="100px"></div>
+		<div class="username"><input type="text" id="username1" placeholder="Email" value=""></div> <br>
+		<div class="password"><input type="password" id="password1" placeholder="Password" value=""></div>
+		<div class="buttons" style="margin-top: 15px">
+			
+			<button style="margin-right: 15px" onclick="signin()">Sign In</button>
+			<button style="margin-left: 15px" onclick="cancel()">Cancel</button>
+
+		</div>
+	</div>
+	<div id="overlay"></div>
+		<header>
+			<div id=header>
+				<div id="asknau"><img src="assets/img/asknau.png" width="80px""></div>
+				<div id="nau"><img src="http://www.na.edu/images/logo/Logo3-alone.png" width="60px"></div>
+				<div id="search"><input type="text" name="search" placeholder="Search..."></div>
+				<div id="bio">
+					Welcome, Daniyar Kayirbolatov
+					<button id="signout" onclick="signout()">Log Out</button>
+				</div>
+				<div id=account><button id="account" onclick="login()">Sign In</button></div>
+			</div>
+		</header>
+<!-- __________________________Body____________________________-->
+		<div class = "content">
+		<div class="question-content">
+		<div class="questions">
+			<div id = "subheader">
+				<h3 id="topquestion"><span>All Questions</span></h3>
+				<div id="tabs">
+					<a href="#" name="tabs" onmouseover='tabsonmouseover("newest")' onmouseout='this.style.backgroundColor="white";' onclick='tabsOnClick("newest")'><span>newest</span></a>
+					<a href="#" name="tabs" onmouseover='tabsonmouseover("featured")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('featured') "><span>featured</span></a>
+					<a href="#" name="tabs" onmouseover='tabsonmouseover("frequent")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('frequent')"><span>frequent</span></a>
+					<a href="#" name="tabs" onmouseover='tabsonmouseover("votes")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('votes')"><span>votes</span></a>
+					<a href="#" name="tabs" onmouseover='tabsonmouseover("active")' onmouseout='this.style.backgroundColor="white";' onclick="tabsOnClick('active')"><span>active</span></a>
+				</div>
+			</div>
+				
+			<div class="question-summary">
+				<div class="stats-container">
+					<div class="votes">
+						<span><strong>0</strong></span></br>
+						<div class="viewcount">votes</div>
+					</div>
+					<div class="answers">
+						<span><strong>0</strong></span></br>
+						<div class="viewanswer">answers</div>
+					</div>
+					<div class="views">
+						<span>116</span> views
+					</div>
+				</div>
+				<div class="summary">
+					<h3>Angular - How to create a persistent/permanent “Add to Home screen” button in my web app, just like Google Contribute</h3>
+					<div class="excerpt">
+						How to create a persistent/permanent "Add to Home screen" button in my web app, just like Google Contribute? (see image below) Background: It's an Angular v5 app with PWA service worker and manifest....
+					</div>
+				</div>
+			</div>
+			<hr>	
+			<div class="question-summary">
+				<div class="stats-container">
+					<div class="votes">
+						<span><strong>0</strong></span></br>
+						<div class="viewcount">votes</div>
+					</div>
+					<div class="answers">
+						<span><strong>0</strong></span></br>
+						<div class="viewanswer">answers</div>
+					</div>
+					<div class="views">
+						<span>200</span> views
+					</div>
+				</div>
+				<div class="summary">
+					<h3>Angular - How to create a persistent/permanent “Add to Home screen” button in my web app, just like Google Contribute</h3>
+					<div class="excerpt">
+						How to create a persistent/permanent "Add to Home screen" button in my web app, just like Google Contribute? (see image below) Background: It's an Angular v5 app with PWA service worker and manifest....
+					</div>
+				</div>
+			</div>
+			<hr>
+			
+		</div>
+		</div>
+
+<!-- ______________________NEWS_________________________ -->
+
+			<div class="news">
+				
+				<div class="n1"><div class="news1"><img class = "img1" src="assets/img/news1.jpg" width="300px"></div></div>
+				<div class="n2"><div class="news2"><img class = "img2" src="assets/img/news2.jpg" width="300px"></div></div>
+				<div class="n3"><div class="news3"><img class = "img3" src="assets/img/news3.jpg" width="300px"></div></div>	
+			</div>
+
+		</div>
+</body>
+</html>
