@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AskNAU!</title>
+	<link rel="stylesheet" type="text/css" href="assets/stylesheet/question.css">
+	<script src="assets/javascript/main.js"></script>
+</head>
+<body onload="tabsOnClick('newest')">
+
+<!-- ________________________Header________________________ -->
+
+	<div id="login">
+		
+		<div id="nau" style="text-align: center; margin-top: 50px; margin-left: 30px;"><img src="http://www.na.edu/images/logo/Logo3-alone.png" width="100px"></div>
+		<div class="username"><input type="text" id="username1" placeholder="Email" value=""></div> <br>
+		<div class="password"><input type="password" id="password1" placeholder="Password" value=""></div>
+		<div class="buttons" style="margin-top: 15px">
+			
+			<button style="margin-right: 15px" onclick="signin()">Sign In</button>
+			<button style="margin-left: 15px" onclick="cancel()">Cancel</button>
+
+		</div>
+	</div>
+
+	<div id="overlay"></div>
+
+	<header>
+		<div id=header>
+			<div id="asknau"><img src="assets/img/asknau.png" width="80px""></div>
+			<div id="nau"><img src="http://www.na.edu/images/logo/Logo3-alone.png" width="60px"></div>
+			<div id="search"><input type="text" name="search" placeholder="Search..."></div>
+			<div id="bio">
+				Welcome, Daniyar Kayirbolatov
+				<button id="signout" onclick="signout()">Log Out</button>
+			</div>
+			<div id=account><button id="account" onclick="login()">Sign In</button></div>
+		</div>
+	</header>
+<!-- __________________________Body____________________________-->
+	<div class = "content">
+		<div class="question-content">
+			<div class="questions">
+				
+				<div class="title">Thanksgiving is free or not?</div>
+				<hr>
+				<div class="votes">
+					<div class="static">
+						<div id="votes">
+							<div><button class="uparrow" onclick="increase()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Pfeil_oben.svg/647px-Pfeil_oben.svg.png"></button></div>
+							<div><button class="downarrow" onclick="decrease()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Aiga_downarrow.svg/750px-Aiga_downarrow.svg.png"></button></div>
+						</div>
+
+						<div class="votesnumber" id="votesnumber">0</div>
+					</div>
+
+					<div class="description">
+						<span>Thanksgiving the best party ever, I liked it.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	
+		<!-- ____________________NEWS______________________________ -->
+		<div class="news">
+			<div class="newstitle" style="text-align: center;">
+				<a href="http://www.na.edu/category/headlines/">
+					<h2 style="color: #005d88;">News</h2>
+				</a>
+			</div>
+			<div class="n1">
+				<div class="news1">
+					<a href="http://www.na.edu/spring-semester-early-registration/">
+						<img class="img1" src="assets/img/news1.jpg" width="300px">
+					</a>
+				</div>
+				<a href="http://www.na.edu/spring-semester-early-registration/">
+					<h4>Spring Semester Early Registration</h4>
+				</a>
+				<p>The Spring semester early registration opens Monday November</p>
+			</div>
+			<div class="n2">
+				<div class="news2">
+					<a href="http://www.na.edu/m-ed-program-ranks-12th-nationwide/">
+						<img class="img2" src="assets/img/news2.jpg" width="300px">
+					</a>
+				</div>
+				<a href="http://www.na.edu/m-ed-program-ranks-12th-nationwide/">
+					<h4>NAU’s M.Ed. program ranks 12th in U.S.</h4>
+				</a>
+				<p>North American University’s Online M.Ed. in Educational Leadership</p>
+			</div>
+			<div class="n3">
+				<div class="news3">
+					<a href="http://www.na.edu/acm-student-club-hosts-hacknau-hackathon/">
+						<img class="img3" src="assets/img/news3.jpg" width="300px">
+					</a>
+				</div>
+				<a href="http://www.na.edu/acm-student-club-hosts-hacknau-hackathon/">
+					<h4>ACM hosts hackNAU Hackathon</h4>
+				</a>
+				<p>North American University ACM Student Club announce city</p>
+			</div>
+		</div>
+	</div>
+
+<!-- _____________________FOOTER_______________________________-->
+
+	<footer>
+		<div id="asknau"><img src="assets/img/asknau.png" width="80px""></div>
+		<div id="nau"><img src="http://www.na.edu/images/logo/Logo3-alone.png" width="60px"></div>
+		<div id="copyright">(C) Daniyar, Talgat, Almaz</div>
+	</footer>
+
+</body>
+</html>

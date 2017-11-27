@@ -46,13 +46,21 @@ function release(v) {
 
 function tabsOnClick(x) {
 	var v = document.getElementsByName("tabs");
-
+	var question = document.getElementsByClassName('question-summary');
+	
 	if (x == "newest" && arr_tabsonclick != 0) {
 		v[0].style.borderLeft = "1px solid black";
 		v[0].style.borderRight = "1px solid black";
 		v[0].style.borderTopColor = "darkblue";
 		release(v);
 		arr_tabsonclick=0;
+
+		var hr = document.getElementsByClassName('question-content')[0].getElementsByTagName('hr');
+		for (var i = 0; i < question.length; i++) {
+			question[i].style.display = "inline-block";
+			hr[i].style.display = "block";
+		}
+
 	}
 
 	if (x == "featured" && arr_tabsonclick != 1) {
@@ -77,6 +85,15 @@ function tabsOnClick(x) {
 		v[3].style.borderTopColor = "darkblue";
 		release(v);
 		arr_tabsonclick=3;
+
+		var hr = document.getElementsByClassName('question-content')[0].getElementsByTagName('hr');
+		for (var i = 0; i < question.length; i++) {
+			var vote = question[i].getElementsByClassName("votes")[0].getElementsByTagName("span")[0].innerText;
+			if (vote < 5) {
+				hr[i].style.display = "none"
+				question[i].style.display = "none";
+			}
+		}
 	}
 
 	if (x == "active" && arr_tabsonclick != 4) {
@@ -105,4 +122,18 @@ function tabsonmouseover(x) {
 
 	if (x == "active" && arr_tabsonclick != 4)
 		v[4].style.backgroundColor = "grey";
+}
+
+//---------------------Votes-----------------------
+
+var votes = 0;
+
+function increase() {
+	votes++;
+	document.getElementById("votesnumber").innerHTML = votes;
+}
+
+function decrease() {
+	votes--;
+	document.getElementById("votesnumber").innerHTML = votes;
 }
