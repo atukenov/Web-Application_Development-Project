@@ -18,10 +18,12 @@ header {
     padding: 0px 0px 0px 10%;
     vertical-align: middle;
 }
+
 #header {
 	height: 100%;
 	display: inline-flex;
 }
+
 #header div {
 	display: inline;	
 	margin-top: auto;
@@ -78,14 +80,15 @@ button[id="account"] {
  	height: 50px;
  	border-bottom: 1px solid black;
  	clear: both;
-
  }
+
  #tabs {
  	float: right;
  	height: 100%;
  	margin: 0 auto;
  	display: inline-flex;
  }
+
  #tabs a {
  	text-decoration: none;
  	color: inherit;
@@ -103,8 +106,8 @@ button[id="account"] {
  	padding-bottom: 10px;
  	text-align: center;
  	width: 100%;
-
  }
+
  #topquestion {
  	float: left;
  	height: 100%;
@@ -112,10 +115,12 @@ button[id="account"] {
  	margin: 0 auto;
  	display: flex;
  }
+
  #topquestion span {
  	align-self: flex-end;
  	padding-bottom: 10px;
  }
+
 div.questions {
 	background-color: white;
 	flex: 1;
@@ -169,16 +174,20 @@ div.questions {
 .news {
 	width: 3 0%;
 }
+
 .news .n1, .n2, .n3 {
 	padding: 20px;
 }
+
 .news1 {
 	width: 100%;
 	overflow: hidden;
 }
+
 .news1 img {
     transition: all 1s ease;
 }
+
 .news1:hover img {
 	transform:scale(1.1);
 }
@@ -187,9 +196,11 @@ div.questions {
 	width: 100%;
 	overflow: hidden;
 }
+
 .news2 img {
     transition: all 1s ease;
 }
+
 .news2:hover img {
 	transform:scale(1.1);
 }
@@ -198,9 +209,11 @@ div.questions {
 	width: 100%;
 	overflow: hidden;
 }
+
 .news3 img {
     transition: all 1s ease;
 }
+
 .news3:hover img {
 	transform:scale(1.1);
 }
