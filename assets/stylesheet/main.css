@@ -132,7 +132,9 @@ button[id="account"] {
  	align-self: flex-end;
  	padding-bottom: 10px;
  }
-
+.questions hr {
+	width: 100%;
+}
 div.questions {
 	background-color: white;
 	flex: 1;
@@ -177,6 +179,7 @@ div.questions {
 	float: left;
 	width: 82%;
 	flex:1;
+
 }
 
 .summary h3 {
