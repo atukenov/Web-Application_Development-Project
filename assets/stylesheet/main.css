@@ -317,3 +317,21 @@ button#signout {
 
 /*-------------------Footer----------------------*/
 
+footer {
+	clear: both;
+	position: relative;
+	background: #242729;
+	height: 50px;	
+	padding: 5px 5px 5px 10%;	
+}
+
+footer div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#copyright {
+	color: white;
+	font-family: Monospace;
+	margin-left: 250px;
+}
