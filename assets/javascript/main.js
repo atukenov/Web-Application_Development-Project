@@ -44,11 +44,19 @@ function release(v) {
 	}	
 }
 
+function update(question, hr) {
+	for (var i = 0; i < question.length; ++i) {
+		question[i].style.display = "inline-block";
+		hr[i].style.display = "block";
+	}
+}
+
 
 function tabsOnClick(x) {
 	var v = document.getElementsByName("tabs");
 	var question = document.getElementsByClassName('question-summary');
-  
+	var hr = document.getElementsByClassName('question-content')[0].getElementsByTagName('hr');
+  	update(question, hr);
 	if (x == "newest" && arr_tabsonclick != 0) {
 		v[0].style.borderLeft = "1px solid black";
 		v[0].style.borderRight = "1px solid black";
@@ -56,7 +64,7 @@ function tabsOnClick(x) {
 		release(v);
 		arr_tabsonclick=0;
 
-		var hr = document.getElementsByClassName('question-content')[0].getElementsByTagName('hr');
+		
 		for (var i = 0; i < question.length; i++) {
 			question[i].style.display = "inline-block";
 			hr[i].style.display = "block";
@@ -69,6 +77,22 @@ function tabsOnClick(x) {
 		v[1].style.borderTopColor = "darkblue";
 		release(v);
 		arr_tabsonclick=1;
+
+		var tag = document.getElementsByClassName('tag');
+
+		for (var i = 0; i < tag.length; ++i) {
+			var a = tag[i].getElementsByTagName('a');
+			var ok = false;
+			for (var j = 0; j < a.length; ++j)
+				if (a[j].innerHTML == "IhsanSaid") {
+					ok = true;
+				}
+			if (ok == false) {
+				question[i].style.display = "none";
+				hr[i].style.display = "none";
+			}
+		}
+
 	}	
 
 	if (x == "frequent" && arr_tabsonclick != 2) {
@@ -77,6 +101,14 @@ function tabsOnClick(x) {
 		v[2].style.borderTopColor = "darkblue";
 		release(v);
 		arr_tabsonclick=2;
+
+		for (var i = 0; i < question.length; i++) {
+			if (i % 2 == 0) {
+				hr[i].style.display = "none"
+				question[i].style.display = "none";
+			}
+		}
+
 	}
 
 	if (x == "votes" && arr_tabsonclick != 3) {
@@ -137,8 +169,20 @@ function decrease() {
 	document.getElementById("votesnumber").innerHTML = votes;
 }
 
+var votes1 = 14;
+
+function increase1() {
+	votes1++;
+	document.getElementById("votesnumber").innerHTML = votes1;
+}
+
+function decrease1() {
+	votes1--;
+	document.getElementById("votesnumber").innerHTML = votes1;
+}
+
 //-------------comment-----------------------
-var com = 2;
+var com = 0;
 
 function increasecom() {
 	com++;
@@ -153,6 +197,8 @@ function decreasecom() {
 function comment() {
 	document.getElementById("daniyarcomment").style.position = "static";
 	document.getElementById("daniyarcomment").style.visibility = "visible";
+	document.getElementById("commentuser").innerHTML = document.getElementById("name").value;
+	document.getElementById("description").innerHTML = document.getElementById("commenttext").value;
 	document.getElementById("commenttext").value = "";
 	document.getElementById("name").value = "";
 }
